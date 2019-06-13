@@ -6,8 +6,8 @@
   </head>
   <body>
     <?php
-      echo $var = <'br'>;
-      echo 'lunghezza:'.strlen($var).<'br'>;
+      echo $var = '<br>';
+      echo 'lunghezza: '.strlen($text_lorem).'<br>';
 
       $word_censored = $_GET['badword'];
 
@@ -19,7 +19,7 @@
        laborum.';
 
 
-      echo str_replace([$word_censored], '***', $text_lorem);
+      echo str_replace($word_censored, '***', $var);
     ?>
   </body>
 </html>
